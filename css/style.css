@@ -13,12 +13,29 @@ h1{
     border: solid black 5px;
 }
 
+h2{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(138, 129, 6);
+    border: solid black 5px;
+    margin: 65px 10px 15px 15px;
+}
+
+.p1{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(138, 129, 6);
+    margin: 100px 920px 20px 20px;
+    border: solid black 5px;
+}
+
 .subtitulo{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     margin: 15px 10px 15px 15px;
     padding: 5px 10px 12px 15px;
+    background-color: rgb(173, 168, 97);
 }
 
 #titulo1{
@@ -37,7 +54,9 @@ h1{
     margin: 35px 10px 15px 15px;
     padding: 5px 10px 10px 13px;
     border: solid black 5px;
+    background-color: rgb(138, 129, 6);
 }
+
 
 
 p{
@@ -51,6 +70,22 @@ p{
     color: rgb(8, 8, 8);
 }
 
+#parrafodecontacto{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 40px;
+    text-transform: none;
+    color: rgb(8, 8, 8);
+    margin:10px 20px 15px 15px;
+    padding: 5px 5px 10px 13px;
+    border: solid black 1px;
+}
+
+
+
 ul{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
@@ -59,7 +94,7 @@ ul{
     text-align: center;
     list-style-type: none;
     color: rgb(2, 2, 2);
-    background-color: black;
+    background-color: rgb(19, 16, 16);
     margin: 20px 10px 25px 15px;
     padding: 15px;
 }
@@ -70,6 +105,17 @@ ul li{
     padding: 20px;
 }
 
+.parrafo{
+    text-align: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:5px 125px 15px 15px;
+    padding: 5px 5px 10px 13px;
+    border: solid black 2px;
+}
+
+.Imagenes{
+    margin-left: 20px;
+}
 
 #imagen{
     text-align: center;
@@ -86,8 +132,8 @@ ul li{
     padding: 10px 10px 12px 15px;
     background-color: darkslategray;
     position: relative;
-    margin-top: 400px;
-    bottom: 0%;
+    margin-top: 600px;
+    margin-bottom: 0;
 }
 
 #pie{
@@ -95,3 +141,94 @@ ul li{
     padding: 10px 10px 12px 15px;
     background-color: darkslategray;
 }
+
+.grids {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.asd:hover{
+    height: 85px;
+    background-color: rgb(4, 189, 4);
+    color: black;
+    }
+
+.asd {
+    transition-property: all;
+    transition-duration: 3s;
+} 
+
+
+/*Declaro mis áreas para grid*/
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+section{
+    grid-area: section;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.a1{
+    grid-area: a1;
+}
+
+.a2{
+    grid-area: a2;
+}
+
+.a3{
+    grid-area: a3;
+}
+
+.a4{
+    grid-area: a4;
+}
+
+
+/*empiezo a acomodar por áreas*/
+
+nav{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "footer";
+}
+
+
+@media (min-width: 500px){
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: initial;
+        background-color: goldenrod;
+    }
+}
+
+
+@media (min-width: 768px){
+    nav ul{
+        flex-direction: column;
+        margin: 10px 5px 5px 5px;
+        border: 2px rgb(176, 214, 5);
+        background-color: rgb(228, 213, 12);
+    }
+}
+
+@media (min-width: 1024px){
+    nav ul{
+        flex-direction: row;
+        background-color: rgb(55, 160, 7);
+    }
+}
+

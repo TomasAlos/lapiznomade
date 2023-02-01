@@ -1,0 +1,189 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/fondo\ madera.png);
+}
+
+h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: chartreuse;
+  margin: 10px 10px 15px 15px;
+  padding: 10px 10px 12px 15px;
+}
+
+h2 {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px 10px 15px 15px;
+}
+
+.p1 {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 100px 920px 20px 20px;
+  border: solid black 5px;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 40px;
+  text-transform: none;
+  color: rgb(0, 0, 0);
+}
+
+#parrafodecontacto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: left;
+  line-height: 40px;
+  text-transform: none;
+  color: rgb(0, 0, 0);
+  margin: 10px 20px 15px 15px;
+  padding: 5px 5px 10px 13px;
+  border: solid black 1px;
+}
+
+.parrafo {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 5px 125px 15px 15px;
+  padding: 5px 5px 10px 13px;
+  border: solid black 2px;
+}
+
+.subtitulo {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin: 15px 10px 1px 15px;
+  padding: 5px 10px 12px 15px;
+}
+
+#titulo1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 25px;
+  margin: 35px 10px 15px 15px;
+  padding: 5px 10px 10px 13px;
+  border: solid black 5px;
+}
+
+#titulo2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 25px;
+  margin: 0px 10px 15px 15px;
+  padding: 5px 10px 10px 13px;
+  border: solid black 5px;
+}
+
+.Imagenes {
+  margin-left: 20px;
+}
+
+#imagen {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imagen2 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pie {
+  margin: 15px 10px 15px 15px;
+  padding: 10px 10px 12px 15px;
+  position: relative;
+  margin-top: 600px;
+  margin-bottom: 0;
+}
+
+#pie {
+  margin: 15px 10px 15px 15px;
+  padding: 10px 10px 12px 15px;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.asd:hover {
+  height: 85px;
+  color: rgb(0, 0, 0);
+}
+
+.asd {
+  transition-property: all;
+  transition-duration: 3s;
+  border: solid black 5px;
+}
+
+/*Declaro mis áreas para grid*/
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.a1 {
+  grid-area: a1;
+}
+
+.a2 {
+  grid-area: a2;
+}
+
+.a3 {
+  grid-area: a3;
+}
+
+.a4 {
+  grid-area: a4;
+}
+
+/*empiezo a acomodar por áreas*/
+nav {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "header" "nav" "section" "footer";
+}
+
+@media (min-width: 500px) {
+  h1 {
+    color: rgb(10, 10, 9);
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    color: rgb(0, 0, 0);
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    color: black;
+  }
+}/*# sourceMappingURL=estilos.css.map */
